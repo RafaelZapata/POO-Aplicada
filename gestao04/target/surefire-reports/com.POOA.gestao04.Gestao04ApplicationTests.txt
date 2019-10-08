@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.POOA.gestao04.Gestao04ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.704 s <<< FAILURE! - in com.POOA.gestao04.Gestao04ApplicationTests
+contextLoads(com.POOA.gestao04.Gestao04ApplicationTests)  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'convidadosController': Unsatisfied dependency expressed through field 'convidados'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convidados': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.POOA.gestao04.models.Convidado
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convidados': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.POOA.gestao04.models.Convidado
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.POOA.gestao04.models.Convidado
+
